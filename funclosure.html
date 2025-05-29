@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuctionClosure</title>
+</head>
+<body>
+    <script>
+        function globalFunction(globalVariable){
+            function localFunction(localVariable){
+                console.log(globalVariable);
+                console.log(localVariable);
+            }
+               return localFunction;
+        }
+        let myClosure = globalFunction("Hello");
+        myClosure("World");
+    </script>
+</body>
+</html>

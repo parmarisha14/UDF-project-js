@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertBox</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width:1300px;
+            margin:10px 20px;
+            
+        }
+        .btn{
+            width:200px;
+            height:50px;
+            background-color:gray;
+            color:white;
+            font-size:20px;
+            border:0;
+        }
+        .box{
+            width:100%;
+            display:none;
+            background-color: cadetblue;
+            color:aliceblue;
+        }
+        .active{
+            display:block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <button class="btn" onclick="msgBox()">Click ME</button>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus inventore totam nemo similique saepe tempore rem? Quasi explicabo minima, perspiciatis tenetur illum reprehenderit laborum, dolorum similique ea vitae ipsa architecto.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

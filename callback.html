@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+</head>
+<body>
+    <script>
+        function msgBox(value,callback){
+            alert("hello "+value);
+            callback();
+        }
+        function printMsg(){
+            alert("Have A Good Day!");
+   
+        }
+        msgBox("John",printMsg);
+    </script>
+</body>
+</html>
